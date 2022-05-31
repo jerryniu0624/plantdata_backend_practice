@@ -1,0 +1,669 @@
+java -jar target/accessing-data-mysql-0.0.1-SNAPSHOT.jar
+
+
+mvn clean package
+
+C:\Users\EDZ\Downloads\apache-tomcat-9.0.50-windows-x64\apache-tomcat-9.0.50
+
+
+
+java -jar accessing-data-mysql-0.0.1-SNAPSHOT.jar
+
+
+java -jar demo-0.0.1-SNAPSHOT.jar
+
+
+
+192.168.4.31
+
+
+
+
+加一个swag
+
+
+ssh -p 22 root@192.168.4.31
+ cd /opt/niuyuanzhuo//访问服务器
+
+demo-0.0.1-SNAPSHOT.jar
+
+在服务器上运行要本地的ip作为数据库
+
+
+oracle
+password
+Wsnyz0624@
+
+
+bad request数据接收方式不对
+
+
+service层业务层
+controller层面向客户
+
+StorageProperties爆红
+
+
+.s.b.d.LoggingFailureAnalysisReporter 
+Parameter 0 of constructor in com.example.uploadingfiles.FileUploadController required a bean of type 'com.example.uploadingfiles.storage.StorageService' that could not be found.
+
+
+tab提示
+
+
+日志  >>
+日志上输出上传成功，结果要刷新才能显示
+
+https://blog.csdn.net/wx1528159409/article/details/90608525?ops_request_misc=%257B%2522request%255Fid%2522%253A%252216269347
+7716780265477554%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162693477716780265477554&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-90608525.first_rank_v2_pc_rank_v29&utm_term=nohup%E8%BF%90%E8%A1%8Cjar%E5%8C%85&spm=1018.2226.3001.4187
+
+
+
+下载时，只会初始化：
+如图
+
+
+postman显示404错误，极大可能是postman里面输入的参数与接口的要求参数不一致
+
+https://blog.csdn.net/qdboi/article/details/118412171
+
+
+https://blog.csdn.net/qq_38874492/article/details/105732293
+
+
+下载文件404：not found
+已解决
+
+        // 根据文件名读取文件
+        Resource file = storageService.loadAsResource(filename);
+断点，一层一层查程序从哪里下载文件，把它放上去，在重启程序，发现文件又被刷新没了，于是直接在程序运行时吧文件弄到指定地址，就下载成功了。
+
+
+socket
+写客户端，写服务端，
+客户端给服务端发个东西，服务端给客户端回个东西
+断开连接
+
+
+ @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+
+        File dest = new File(filePath, fileName);
+
+
+https://blog.csdn.net/zlz18225318697/article/details/52799004?ops_request_misc=&request_id=&biz_id=102&utm_term=socket%E5%86%99%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%9C%8D%E5%8A%A1%E7%AB%AFjava&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-.nonecase&spm=1018.2226.3001.4187
+
+
+前两个是http协议，服务层，要写接口
+socket走tcp协议，更加原始，不用接口
+
+https://blog.csdn.net/lilizhou2008/article/details/105697243?ops_request_misc=&request_id=&biz_id=102&utm_term=java%E5%90%AF%E5%8A%A8%E7%B1%BB%E4%BE%8B%E5%AD%90&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-.first_rank_v2_pc_rank_v29&spm=1018.2226.3001.4187
+
+
+
+ps -ef|grep 进程号//查看该进程被哪一个程序占用
+
+线程池 blockingqueue例子生产消费
+
+
+
+写一个客户端代替Postman
+
+
+take put
+单例模式
+
+https://blog.csdn.net/alenejinping/article/details/113753703
+
+https://blog.csdn.net/weixin_42620326/article/details/115186502
+
+https://blog.csdn.net/qq_22685435/article/details/116406265?ops_request_misc=%257B%2522request%255
+Fid%2522%253A%2522162728776716780262567004%2522%252C%2522scm%2522%253A%252220140713.
+130102334.pc%255Fall.%2522%257D&request_id=162728776716780262567004&biz_id=0&utm_medium=distr
+ibute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-116406265.first_rank_v2_pc_rank_v29&utm_t
+erm=blockingQueue.put+take%E4%BD%BF%E7%94%A8%E4%BE%8B%E5%AD%90&spm=1018.2226.3001.4187
+
+https://blog.csdn.net/weixin_44874269/article/details/117331592?ops_request_misc=%257B%2522request%255Fid%
+2522%253A%2522162728846616780265421534%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%25
+5Fall.%2522%257D&request_id=162728846616780265421534&biz_id=0&utm_medium=distribute.pc_search_result.none-tas
+k-blog-2~all~first_rank_v2~rank_v29-2-117331592.first_rank_v2_pc_rank_v29&utm_term=blockingQueue+%E5%8D%95%E4%
+BE%8B&spm=1018.2226.3001.4187
+
+https://blog.csdn.net/qq_38844728/article/details/88903939?ops_request_misc=%257B%2522request%255Fid%2522%253
+A%2522162729221716780261944004%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&requ
+est_id=162729221716780261944004&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend
+~default-1-88903939.first_rank_v2_pc_rank_v29&utm_term=%E7%94%A8%E6%9E%9A%E4%B8%BE%E5%AE%9E%E7%8E%B0
+%E5%8D%95%E4%BE%8B&spm=1018.2226.3001.4187
+
+java: 找不到符号   符号:   方法 value()   位置: @interface lombok.Value
+value注释有两个，一个是lombok,一个是springboot
+应该用后者
+
+
+
+redis
+
+Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+
+postman:
+报错：
+bad request:
+路径错了
+
+set中的key不是键值对中的键，而是set名
+
+http://localhost:8080/redis/delete?company=plantdata&id=1&name=jerry&email=333
+
+http://localhost:8080/redis/showall?company=plantdata
+
+redis进程和自己进程是两个进程
+要用opsForSet来删除，这是两个进程的底层接口
+如果用普通方法，只是删除本地的
+下次再查，redis进程里的数据还在
+
+
+http://localhost:8080/redis/add?company=plantdata&id=1&name=jerry&email=123
+
+
+mongod --dbpath "D:\mongodb\data\db" --logpath "D:\Program Files\MongoDB\Server\4.0\logs\log.txt" --install --serviceName "MongoDB"
+
+
+先知道需求（安全，大数据etc）
+考虑大方向：用什么库，什么东西
+大方向的评估
+
+单测：看方法行不行
+Hamcrest
+JUnit4
+mockito
+冒烟测试：调用接口
+
+不要用别人的数据库，比如mongo的map啥的
+jdk的可以
+
+
+CTRL alt B
+//查interface的实现类
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">-->
+<!--    <modelVersion>4.0.0</modelVersion>-->
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>2.5.2</version>-->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+<!--    </parent>-->
+<!--    <groupId>com.vue</groupId>-->
+<!--    <artifactId>ElasticSearch</artifactId>-->
+<!--    <version>0.0.1-SNAPSHOT</version>-->
+<!--    <name>ElasticSearch</name>-->
+<!--    <description>ElasticSearch</description>-->
+
+<!--    <properties>-->
+<!--        <java.version>1.8</java.version>-->
+<!--    </properties>-->
+
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
+
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>mysql</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>mysql-connector-java</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <scope>runtime</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>com.alibaba</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>fastjson</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <version>1.2.71</version>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>com.alibaba</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>druid</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <version>1.0.26</version>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.16.20</version>-->
+<!--        </dependency>-->
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>com.baomidou</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>mybatis-plus-boot-starter</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <version>2.2.0</version>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>spring-boot-devtools</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <optional>true</optional>&ndash;&gt;-->
+<!--&lt;!&ndash;            <scope>true</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-elasticsearch &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
+<!--        </dependency>-->
+<!--&lt;!&ndash;        &lt;!&ndash; https://mvnrepository.com/artifact/org.mockito/mockito-core &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>org.mockito</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>mockito-core</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <version>2.23.4</version>&ndash;&gt;-->
+<!--&lt;!&ndash;            <scope>compile</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;            <groupId>org.junit.jupiter</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <artifactId>junit-jupiter-api</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;            <version>5.3.2</version>&ndash;&gt;-->
+<!--&lt;!&ndash;            <scope>compile</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+<!--    </dependencies>-->
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <version>2.5.2</version>-->
+<!--                <configuration>-->
+<!--                    <mainClass>com.example.demo.DemoApplication</mainClass>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+<!--</project>-->
+
+
+http://127.0.0.1:9200/_cat/indices?v
+
+
+{
+    "id" : "4",
+    "firstName" : "Deng",
+    "lastName" : "chen",
+    "about" : "senior"
+}
+
+程序对应port8080
+elasticSearch对应port9200
+
+Username
+elastic
+Password
+8O9ZZdumyPjdjZj4XgNk0PI6
+
+https://blog.csdn.net/xiaozm1223/article/details/89210295
+
+springweb 
+springboot
+spring
+mybatis
+写sql(mysql)
+搭配不同starter
+springboot+spring+springmvc+mybatis+druid+mysql
+
+人员
+姓名，性别，地址
+部门
+部门id
+关系表
+人员与部门
+
+mapper（自己的业务和mysql连接时用的）
+mybatis管自己的对象和mysql的转换
+Mybatis 本身抽象了大量的 JDBC 冗余代码，同时基于对象关系映射模型，向外提供了一套灵活易用的 API 和数据库做交互。
+druid连接池（共享单车）
+
+mapper操作数据库
+dao操作数据（entity）
+
+把环境整好
+
+orcale爆红
+persistence以来要用，中央仓库找不到，我们也不用，所以用exclusion拿掉他
+
+Feign是Netflix开发的声明式、模板化的HTTP客户端
+Redis:REmote DIctionary Server(远程字典服务)。
+
+是由意大利人Salvatore Sanfilippo（网名：antirez）开发的一款内存高速缓存数据库。
+Redisson是Redis服务器上的分布式可伸缩Java数据结构----驻内存数据网格(In-Memory Data Grid，IMDG)。
+mongo数据库
+elasticsearch搜索引擎
+kafka日志系统
+swagger前后端调用时的端口文件自动撰写
+MyBatis 是一款优秀的持久层框架，它支持自定义 SQL、存储过程以及高级映射。
+
+feign是让一个后端程序调用另一个后端程序，需要知道那个程序接口地址（url）。
+为了数据对前端保密，所以才不能直接把另一个后端程序的url直接给前端。
+
+mock测试service
+测试controller
+
+
+观察者
+访问
+适配器
+单例
+工厂
+策略	
+模板
+组合
+
+抽象工厂：Factory是接口，是为了不让人new
+其他人要用时，直接在AppleFactory上new
+
+templist
+springbootweb
+mysql
+
+文件上传下载，分到各个用户名下
+1. 文件上传  2.文件下载 3. 多文件上传  4. 文件属于不同的用户
+
+<!--<dependency>-->
+<!--    <groupId>org.springframework.boot</groupId>-->
+<!--    <artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.mybatis.spring.boot</groupId>-->
+<!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--</dependency>-->
+
+<!--        &lt;!&ndash; web依赖，包含servlet,内置tomcat等 &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.springframework.boot</groupId>-->
+<!--<artifactId>spring-boot-starter-web</artifactId>-->
+<!--</dependency>-->
+
+
+<!--        &lt;!&ndash; mysql依赖 &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>mysql</groupId>-->
+<!--<artifactId>mysql-connector-java</artifactId>-->
+<!--<scope>runtime</scope>-->
+<!--</dependency>-->
+
+<!--        &lt;!&ndash; mybatis依赖 &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.mybatis.spring.boot</groupId>-->
+<!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--<version>1.3.2</version>-->
+<!--</dependency>-->
+
+<!--        &lt;!&ndash; druid依赖包，配合springBoot项目使用 &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>com.alibaba</groupId>-->
+<!--<artifactId>druid-spring-boot-starter</artifactId>-->
+<!--<version>1.1.14</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.projectlombok</groupId>-->
+<!--<artifactId>lombok</artifactId>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.springframework.boot</groupId>-->
+<!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--&lt;!&ndash;            <version>2.3.4.RELEASE</version>&ndash;&gt;-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.slf4j</groupId>-->
+<!--<artifactId>log4j-over-slf4j</artifactId>-->
+<!--<version>1.7.30</version>-->
+<!--</dependency>-->
+
+@PostMapping(value = "/api/kgms/file" ,consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public String fileUpload(ModelMap map, MultipartFile file){
+        String Authorization = "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjk3MzM1MTcsInVzZXJfbmFtZSI6eyJwYXNzd29yZCI6bnVsbCwidXNlcm5hbWUiOiIxNTgxMjM0NTY3OCIsImF1dGhvcml0aWVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0tHQk9UIn0seyJhdXRob3JpdHkiOiJST0xFX0tHREVNTyJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9LR0RQIn0seyJhdXRob3JpdHkiOiJST0xFX0tHTElURSJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9LR01TIn0seyJhdXRob3JpdHkiOiJST0xFX0tHVEVYVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJhY2NvdW50Tm9uRXhwaXJlZCI6dHJ1ZSwiYWNjb3VudE5vbkxvY2tlZCI6dHJ1ZSwiY3JlZGVudGlhbHNOb25FeHBpcmVkIjp0cnVlLCJlbmFibGVkIjp0cnVlLCJ1c2VySWQiOiJkZWZhdWx0X3VzZXIiLCJuYW1lIjoi6buY6K6k55So5oi3In0sImF1dGhvcml0aWVzIjpbIlJPTEVfS0dNUyIsIlJPTEVfVVNFUiIsIlJPTEVfS0dMSVRFIiwiUk9MRV9LR0JPVCIsIlJPTEVfS0dERU1PIiwiUk9MRV9LR1RFWFQiLCJST0xFX0tHRFAiXSwianRpIjoiNjBlZDhlNDUtNWU2My00OTM1LTk1ZmYtOWJmYjFmNzEwNjA0IiwiY2xpZW50X2lkIjoiaGlla24iLCJzY29wZSI6WyJhbGwiXX0.YRTJSdQb3Ot2lF9XcohOeBr35A5qoQNm0iJq5wMcoa_uJvHS9uShPkb2XWlu2p1hl4WqlbDIC18Y37thy6VVObwTiFDTq7byhdRmVp9eeLmV2Bdrq1g8q0a4xjH1Glzahr34c9QwwsQRMHamb5iJLtKd245hryh3mLEo_ASQtVsjm1g9GOG_tsiZdd-c6b0RQurrZmXeeVeZJ45eebYs1ygpHGNUl9aSpJpxpSCTyMn8lMQp5MAXfsJgRIs3lT-4vSBq9kCqC4yB8V2TlP1IXZAtUmy-5UbUMfY09TuPXMeZhMk9aTysMhlVKEuLEChthUKwWFAKEXnLS5kuNZa-1A";
+        service.insertOneFile(file);
+        System.out.println(feignService.upLoadFile(file, Authorization).substring(11,14));
+        System.out.println(feignService.upLoadFile(file,Authorization));
+        log.error(feignService.upLoadFile(file,Authorization));
+        if(feignService.upLoadFile(file, Authorization).substring(11,14).equals("200")){
+            map.addAttribute("fullPath",feignService.upLoadFile(file,Authorization).substring(35,87));
+
+//        service.feignService.upLoadFile(fileName,Authorization).substring(35,87));
+            map.addAttribute("files",file);
+            return "customer/fileList";
+        }
+        return "customer/fileList";
+    }
+
+https://www.cnblogs.com/xiaomai0379/p/7607951.html
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0"-->
+<!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">-->
+<!--<parent>-->
+<!--    <artifactId>kg-cloud-parent</artifactId>-->
+<!--    <groupId>ai.plantdata</groupId>-->
+<!--    <version>3.6.2</version>-->
+<!--</parent>-->
+<!--<modelVersion>4.0.0</modelVersion>-->
+<!--<artifactId>kg-cloud-kgms</artifactId>-->
+<!--<version>${revision}${sha1}${changelist}</version>-->
+<!--<packaging>jar</packaging>-->
+
+<!--<properties>-->
+<!--    <revision>3.6.9</revision>-->
+<!--    <changelist/>-->
+<!--    <sha1/>-->
+
+<!--    <kg-cloud-kgms.version>${revision}${sha1}${changelist}</kg-cloud-kgms.version>-->
+
+<!--    <kg-cloud-public.version>3.5.17</kg-cloud-public.version>-->
+<!--    <kg-services-sdk.version>3.6.5</kg-services-sdk.version>-->
+<!--</properties>-->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<parent>
+    <artifactId>kg-cloud-parent</artifactId>
+    <groupId>ai.plantdata</groupId>
+    <version>3.6.2</version>
+</parent>
+<modelVersion>4.0.0</modelVersion>
+<artifactId>kg-cloud-kgms</artifactId>
+<version>${revision}${sha1}${changelist}</version>
+<packaging>jar</packaging>
+
+<properties>
+    <revision>3.6.9</revision>
+    <changelist/>
+    <sha1/>
+
+    <kg-cloud-kgms.version>${revision}${sha1}${changelist}</kg-cloud-kgms.version>
+
+    <kg-cloud-public.version>3.5.17</kg-cloud-public.version>
+    <kg-services-sdk.version>3.6.5</kg-services-sdk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-context</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <optional>true</optional>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.plantdata</groupId>
+        <artifactId>kgms-sdk</artifactId>
+        <version>${kg-cloud-kgms.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.plantdata</groupId>
+        <artifactId>kgrepo-sdk</artifactId>
+        <version>${kg-cloud-kgms.version}</version>
+    </dependency>
+
+    <!-- ********** public sdk *************-->
+    <dependency>
+        <groupId>ai.plantdata</groupId>
+        <artifactId>kguser-sdk</artifactId>
+        <version>${kg-cloud-public.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.plantdata</groupId>
+        <artifactId>xxl-admin-sdk</artifactId>
+        <version>${kg-cloud-public.version}</version>
+    </dependency>
+
+    <!-- ********** 底层 sdk *************-->
+    <dependency>
+        <artifactId>edit-api</artifactId>
+        <groupId>ai.plantdata</groupId>
+        <version>${kg-services-sdk.version}</version>
+    </dependency>
+    <dependency>
+        <artifactId>public-api</artifactId>
+        <groupId>ai.plantdata</groupId>
+        <version>${kg-services-sdk.version}</version>
+    </dependency>
+    <dependency>
+        <artifactId>semantic-api</artifactId>
+        <groupId>ai.plantdata</groupId>
+        <version>${kg-services-sdk.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.20</version>
+        <optional>true</optional>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+    <groupId>org.mybatis.spring.boot</groupId>
+    <artifactId>mybatis-spring-boot-starter</artifactId>
+    </dependency>
+
+            <!-- web依赖，包含servlet,内置tomcat等 -->
+    <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+
+            <!-- mysql依赖 -->
+    <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
+    </dependency>
+
+            <!-- mybatis依赖 -->
+    <dependency>
+    <groupId>org.mybatis.spring.boot</groupId>
+    <artifactId>mybatis-spring-boot-starter</artifactId>
+    <version>1.3.2</version>
+    </dependency>
+
+            <!-- druid依赖包，配合springBoot项目使用 -->
+    <dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid-spring-boot-starter</artifactId>
+    <version>1.1.14</version>
+    </dependency>
+    <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    <!--            <version>2.3.4.RELEASE</version>-->
+    </dependency>
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>log4j-over-slf4j</artifactId>
+    <version>1.7.30</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+        <version>2.2.3.RELEASE</version>
+    </dependency>
+
+</dependencies>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+
+</build>
+
+</project>
